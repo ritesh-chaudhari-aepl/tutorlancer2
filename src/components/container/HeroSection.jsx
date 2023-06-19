@@ -47,8 +47,8 @@ const Hero = () => {
               </h1>
 
               <p className="mt-4 text-black font-Inter font-medium mb-12">
-                private, 1-on-1 lessions with te expert instructor based on
-                <br /> your goals and interests.
+              THE BEST WAY TO TAKE HELP IN YOUR ACADEMIC<br></br>
+Hire us for quality solutions to all your coursework at affordable prices. 
               </p>
 
               <div className="mb-6 flex flex-col gap-10 sm:flex-row sm:gap-6">
