@@ -1,6 +1,6 @@
 import sideImage from "../assets/group1.svg";
 import line from "../assets/line.svg";
-import CustomButton from "../components/buttons/CustomButton";
+// import CustomButton from "../components/buttons/CustomButton";
 
 const Schedule = () => {
   return (
@@ -45,14 +45,12 @@ const Schedule = () => {
               individual pace.
             </p>
 
-            <CustomButton
-              bgGradientStart="#FF7714"
-              bgGradientEnd="#FFCF59"
-              borderRadius="full"
-              textColor="white"
-            >
-              Learn More
-            </CustomButton>
+            <a
+            href="#about"
+            className="inline-block rounded-full bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
+          >
+            Learn more
+          </a>
           </div>
         </div>
       </div>

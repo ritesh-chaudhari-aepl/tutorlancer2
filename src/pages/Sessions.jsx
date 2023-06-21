@@ -9,7 +9,7 @@ import ar2 from "../assets/up.svg";
 
 const Sessions = () => {
   return (
-    <section className="bg-primaryWhite">
+    <section id="session" className="bg-primaryWhite">
       <div className="mx-auto max-w-screen-xl mt-16 sm:mt-0 py-14 sm:py-24">
         <div>
           <div className=" mb-24">

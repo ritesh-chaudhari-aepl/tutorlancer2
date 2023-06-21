@@ -1,3 +1,5 @@
+
+import logo from '../assets/capLogo.png'
 const Footer = () => {
   return (
     <footer className="bg-[#0166FF] text-white">
@@ -7,18 +9,18 @@ const Footer = () => {
         <div>
           <div className="flex flex-col gap-8">
             <span className="tracking-[6px] font-Nunito font-bold text-2xl sm:text-4xl">
-              LOGO
+              {/* LOGO */}<img className="w-20 pt-3" src={logo} alt='not found'/>
             </span>
             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:gap-8">
               <div>
                 <p className="text-[18px] font-Nunito font-[500] leading-[30px]">
-                  Tutorlancer is an online platform that connects online tutors
+                Assignment {"Guru's"} is an online platform that connects online tutors
                   with
                   <br /> students across the globe who seeks academic help.
                 </p>
                 <p className="flex flex-col gap-1 font-Nunito">
                   <span>
-                    <strong>Email</strong>: support@thetutorlancer.com
+                    <strong>Email</strong>: support@assignmentguru.com
                   </span>
                   <span>
                     <strong>Phone</strong>: +91 6289409441
@@ -37,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <p className="mb-10 sm:mb-0">
-                © 2022 thetutorlancer.com. All rights reserved Abhay Education
+                © 2022Assignment {"Guru's"}.com. All rights reserved Abhay Education
                 Pvt. Ltd.
               </p>
               <ul className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-6">

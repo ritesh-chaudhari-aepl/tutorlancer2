@@ -18,7 +18,9 @@ function Header({ myRef }) {
       window.scrollY > 70 ? setIsActive(true) : setIsActive(false);
     });
   });
-
+  // function scrollY(){
+  //   window.scrollBy(0, -100);
+  // }
   return (
     <header
       className={`${
@@ -27,6 +29,7 @@ function Header({ myRef }) {
           : "top-0 sm:top-0 py-10"
       } py-4 sm:py-8 fixed w-full transition-all z-10 bg-primaryWhite`}
     >
+       
       <div className="mx-auto max-w-screen-2xl lg:max-w-screen-xl px-4 pt-3 sm:px-6 flex justify-between items-center">
         {/* logo */}
         <a href="#">
@@ -39,17 +42,12 @@ function Header({ myRef }) {
           <Nav ref={myRef} />
         </div>
         <div className="hidden lg:block">
+          
           <a
-            href="#"
-            className="inline-block rounded-full bg-transparent px-3 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
-          >
-            Sign in
-          </a>
-          <a
-            href="#"
+            href="#contact" 
             className="inline-block rounded-full bg-blue-main px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
-            Sign Up
+            Contact Us 
           </a>
         </div>
         {/* cta button - initially hidden - show on desktop mode */}

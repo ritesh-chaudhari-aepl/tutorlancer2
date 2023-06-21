@@ -2,7 +2,7 @@ import p1 from "../assets/p1.svg";
 import p2 from "../assets/p2.svg";
 import bg from "../assets/banner3.svg";
 import { BsPlayFill } from "react-icons/bs";
-import CustomButton from "../components/buttons/CustomButton";
+// import CustomButton from "../components/buttons/CustomButton";
 
 const About = () => {
   // const bgstyles = {
@@ -74,6 +74,7 @@ const About = () => {
 
             <div className="py-6 lg:py-8">
               <article className="text-black">
+                <p className="pb-3">With Assignment Guru as a reliable academic companion, students can overcome challenges, improve their grades, and excel in their studies. {"It's"} the ultimate resource for academic success, supporting students every step of the way.</p>
                 <p>
                   Tutorlancer is an online platform that connects online tutors
                   with students across the globe who seeks academic help. We
@@ -83,14 +84,13 @@ const About = () => {
                 </p>
               </article>
             </div>
-            <CustomButton
-              bgGradientStart="#FF7714"
-              bgGradientEnd="#FFCF59"
-              borderRadius="full"
-              textColor="white"
-            >
-              Learn More
-            </CustomButton>
+            
+            <a
+            href="#contact"
+            className="inline-block rounded-full bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
+          >
+            Contact Us 
+          </a>
           </div>
         </div>
       </div>

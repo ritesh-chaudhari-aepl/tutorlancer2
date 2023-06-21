@@ -14,12 +14,12 @@ const Features = () => {
               Features
             </h3>
             <div className="">
-              <h3 className="text-center text-xl mt-3 font-semibold font-Inter sm:text-[44px] capitalize sm:leading-[27px]">
+              <h3 className="text-center text-xl mt-3 font-semibold font-Inter sm:text-[44px] capitalize sm:leading-[39px]">
                 some <strong>features</strong> that make us{" "}
                 <strong>different</strong>
               </h3>
             </div>
-            <p className="text-center mt-3 font-semibold font-Inter sm:leading-[27px]">lorem ipsum is simply dummy the of the printing and typesetting industry.<br /> lorem ipsum has been the 1500s, when</p>
+            <p className="text-center mt-3 font-semibold font-Inter sm:leading-[27px]">Assignment {"Guru's"} is focused on ensuring to meet <br className="hidden sm:block"></br> the needs of the students around the globe for their assignments</p>
           </div>
 
           <div className="">

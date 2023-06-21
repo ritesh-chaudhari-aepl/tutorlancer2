@@ -1,13 +1,51 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CustomButton from "../components/buttons/CustomButton";
-
+import { useState } from "react";
+import axios from "axios";
 const Contact = () => {
-  const showToastMessage = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [phone, setPhone] = useState();
+  const [subject, setSubject] = useState();
+  const [message, setMessage] = useState();
+
+  const showToastMessage =async () => {
+    const data={
+      device_number:"Device 10",
+      name,
+      email ,
+      phone ,
+      subject,
+      message
+    }
+    if(!name || !email ||   !phone || !subject || !message){
+      toast.warning("Please fill all required data.", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      return;
+    }
+    
+    const sendData = await axios.post("https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData",data)
+    console.log(sendData.data.success)
+    if(sendData.data.success){
     toast.success("Message Sent Successfully", {
       position: toast.POSITION.TOP_RIGHT,
     });
+    setName()
+    setEmail()
+    setPhone()
+    setSubject()
+    setMessage()
+    }
+  else{
+    toast.error("Somthing went wrong.", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  }
   };
+
+
   return (
     <section id="contact" className="">
       <div className="max-w-screen-2xl px-5 pb-10 sm:pb-16 mx-auto">
@@ -24,9 +62,11 @@ const Contact = () => {
             <div className="p-2 w-1/2">
               <div className="relative">
                 <input
+                value={name}
+                onChange={e=>setName(e.target.value)}
                   placeholder="Name"
                   type="text"
-                  id="name"
+                  // id="name"
                   name="name"
                   className="w-full rounded-[3px] bg-gray-100 bg-opacity-50 border border-[#D7E0EF] focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
@@ -35,6 +75,8 @@ const Contact = () => {
             <div className="p-2 w-1/2">
               <div className="relative">
                 <input
+                value={email}
+                onChange={e=>setEmail(e.target.value)}
                   placeholder="Email"
                   type="email"
                   id="email"
@@ -46,6 +88,8 @@ const Contact = () => {
             <div className="p-2 w-1/2">
               <div className="relative">
                 <input
+                value={phone}
+                onChange={e=>setPhone(e.target.value)}
                   placeholder="Phone"
                   type="number"
                   id="phone"
@@ -57,6 +101,8 @@ const Contact = () => {
             <div className="p-2 w-1/2">
               <div className="relative">
                 <input
+                value={subject}
+                onChange={e=>setSubject(e.target.value)}
                   placeholder="Subject"
                   type="text"
                   id="subject"
@@ -68,6 +114,8 @@ const Contact = () => {
             <div className="p-2 w-full">
               <div className="relative">
                 <textarea
+                value={message}
+                onChange={e=>setMessage(e.target.value)}
                   placeholder="Message"
                   rows={4}
                   id="message"

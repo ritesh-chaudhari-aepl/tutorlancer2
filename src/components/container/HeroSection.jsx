@@ -1,4 +1,4 @@
-import CustomButton from "../buttons/CustomButton";
+// import CustomButton from "../buttons/CustomButton";
 import { BsFillPlayFill } from "react-icons/bs";
 import hero from "../../assets/banner-2.svg";
 import flower from "../../assets/flower.svg";
@@ -41,28 +41,26 @@ const Hero = () => {
                   />
                 </span>
                 <strong>
-                  <br /> through 1-on-1
+                  <br /> through Assignment {"Guru's"}
                 </strong>
                 <br /> online tutoring
               </h1>
 
               <p className="mt-4 text-black font-Inter font-medium mb-12">
-              THE BEST WAY TO TAKE HELP IN YOUR ACADEMIC<br></br>
-Hire us for quality solutions to all your coursework at affordable prices. 
+              Unlock Your Academic Success with Assignment {"Guru's"} Expert Assistance! 
+  
               </p>
 
               <div className="mb-6 flex flex-col gap-10 sm:flex-row sm:gap-6">
-                <CustomButton
-                  bgGradientStart="#FF7714"
-                  bgGradientEnd="#FFCF59"
-                  borderRadius="full"
-                  textColor="white"
-                >
-                  Join Course
-                </CustomButton>
+              <a
+            href="#contact"
+            className="inline-block rounded-full bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
+          >
+            Join Course
+          </a>
                 <div className="flex flex-row gap-3 items-center sm:only:justify-center">
                   <a
-                    href="#"
+                    href="#session"
                     className="inline-block rounded-full bg-blue-main p-3 text-sm font-medium text-white transition hover:bg-blue-darkBlue focus:outline-none "
                   >
                     <BsFillPlayFill size={25} />
