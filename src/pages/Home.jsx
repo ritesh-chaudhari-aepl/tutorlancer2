@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <main>
       <a
-            href="#contac   "
+            href="#contac"
             className="    h-fit  bg-[green] group w-fit active:scale-110 text-lg font-bold text-white hover:scale-105 duration-300  delay-100  rounded-full right-7 bottom-5 fixed"
           >
            <span className="pl-3   text-primaryWhite">Chat In</span> <IoLogoWhatsapp className="inline-flex p-2" size={45} color="white"/>

@@ -36,7 +36,14 @@ const About = () => {
     backgroundRepeat: "no-repeat",
     height:'auto'
   };
+  function handleScroll(section){
+    let value=document.getElementById(section)
+    console.log(value)
+    if(value){
+        value.scrollIntoView({behavior:"smooth",block:'center',inline:'center'})
+    }
 
+}
   return (
     <section id="about" className="bg-primaryWhite" style={aboutbg}>
       <div
@@ -86,7 +93,7 @@ const About = () => {
             </div>
             
             <a
-            href="#contact"
+            onClick={()=>handleScroll('contact')}
             className="inline-block rounded-full bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
             Contact Us 
