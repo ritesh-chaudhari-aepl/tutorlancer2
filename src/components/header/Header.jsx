@@ -5,7 +5,7 @@ import { HiOutlineX } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 import Nav from "./navbar/Navbar";
 import MobileNav from "./navbar/Mobilenav";
-import logo from '../../assets/capLogo.png'
+import logo from '../../assets/assiGuruCrop.png'
 function Header({ myRef }) {
   // mobile nav state
   const [mobileNav, setMobileNav] = useState(false);
@@ -38,7 +38,7 @@ function Header({ myRef }) {
         {/* logo */}
         <a href="#">
           <span className="font-Inter font-bold tracking-[10px] text-2xl uppercase sm:text-[30px]">
-             <img width={60} src={logo} alt="logo"/>
+             <img width={100} src={logo} alt="logo"/>
           </span>
         </a>
         {/* nav - initially hidden - show on desktop mode */}

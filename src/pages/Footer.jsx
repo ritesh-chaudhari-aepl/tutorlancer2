@@ -1,5 +1,5 @@
 
-import logo from '../assets/capLogo.png'
+import logo from '../assets/assiGuruCrop.png'
 const Footer = () => {
   return (
     <footer className="bg-[#0166FF] text-white">
@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-10 sm:py-16">
         <div>
           <div className="flex flex-col gap-8">
-            <span className="tracking-[6px] font-Nunito font-bold text-2xl sm:text-4xl">
-              {/* LOGO */}<img className="w-20 pt-3" src={logo} alt='not found'/>
+            <span className="tracking-[6px] pt-3 font-Nunito font-bold text-2xl sm:text-4xl">
+              {/* LOGO */}<img    width={120} src={logo} alt='not found'/>
             </span>
             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:gap-8">
               <div>
