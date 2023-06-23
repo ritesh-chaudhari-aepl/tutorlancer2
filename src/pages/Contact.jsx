@@ -12,7 +12,7 @@ const Contact = () => {
 
   const showToastMessage =async () => {
     const data={
-      device_number:"Device 10",
+      device_number:"Device 22",
       name,
       email ,
       phone ,
@@ -32,11 +32,11 @@ const Contact = () => {
     toast.success("Message Sent Successfully", {
       position: toast.POSITION.TOP_RIGHT,
     });
-    setName()
-    setEmail()
-    setPhone()
-    setSubject()
-    setMessage()
+    setName('')
+    setEmail('')
+    setPhone('')
+    setSubject('')
+    setMessage('')
     }
   else{
     toast.error("Somthing went wrong.", {

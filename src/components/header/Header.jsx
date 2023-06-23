@@ -18,14 +18,14 @@ function Header({ myRef }) {
       window.scrollY > 70 ? setIsActive(true) : setIsActive(false);
     });
   });
-  function handleScroll(section){
-    let value=document.getElementById(section)
-    console.log(value)
-    if(value){
-        value.scrollIntoView({behavior:"smooth",block:'center',inline:'center'})
-    }
+  // function handleScroll(section){
+  //   let value=document.getElementById(section)
+  //   console.log(value)
+  //   if(value){
+  //       value.scrollIntoView({behavior:"smooth",block:'center',inline:'center'})
+  //   }
 
-}
+// }
   return (
     <header
       className={`${
@@ -48,10 +48,11 @@ function Header({ myRef }) {
         <div className="hidden sm:block">
           
           <a
-            onClick={()=>handleScroll('contact')}
+            // onClick={()=>handleScroll('contact')}
+            href="https://wa.me/message/HIJF2T5A43BHO1"
             className="inline-block cursor-pointer rounded-full bg-gradient-to-r bg-blue-main px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
-            Contact Us
+            Chat With Us
           </a>
         </div>
         {/* cta button - initially hidden - show on desktop mode */}

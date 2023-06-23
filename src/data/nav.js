@@ -6,6 +6,6 @@ export const nav = [
     { name: 'Review', href: 'review' },
      
     
-    // { name: 'Contact us', href: 'contact' },
+    { name: 'Contact us', href: 'contact' },
   ];
   

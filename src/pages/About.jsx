@@ -36,14 +36,14 @@ const About = () => {
     backgroundRepeat: "no-repeat",
     height:'auto'
   };
-  function handleScroll(section){
-    let value=document.getElementById(section)
-    console.log(value)
-    if(value){
-        value.scrollIntoView({behavior:"smooth",block:'center',inline:'center'})
-    }
+//   function handleScroll(section){
+//     let value=document.getElementById(section)
+//     console.log(value)
+//     if(value){
+//         value.scrollIntoView({behavior:"smooth",block:'center',inline:'center'})
+//     }
 
-}
+// }
   return (
     <section id="about" className="bg-primaryWhite" style={aboutbg}>
       <div
@@ -93,10 +93,10 @@ const About = () => {
             </div>
             
             <a
-            onClick={()=>handleScroll('contact')}
-            className="inline-block rounded-full bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
+            href="https://wa.me/message/HIJF2T5A43BHO1"
+            className="inline-block rounded-full cursor-pointer bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
-            Contact Us 
+            Ask Questions 
           </a>
           </div>
         </div>

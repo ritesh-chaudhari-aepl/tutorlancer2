@@ -53,7 +53,7 @@ const Download = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-[34rem] top-[6rem] xl:left-[48rem] xl:top-[7rem] lg:left-[38rem] xs-hidden">
+        <div className="absolute left-[34rem] top-[6rem] xl:left-[58rem] xl:top-[7rem] lg:left-[38rem] xs-hidden">
           <div className="circle rounded-full h-24 w-24 sm:h-32 sm:w-32 bg-violet-main flex flex-col justify-center items-center text-center relative lg:-left-16 lg:top-14 md:-left-16 md:top-16">
             <span className="font-QuickSand font-bold sm:text-[40px]">98%</span>
             <span className="text-[15px] font-QuickSand font-light leading-0 text-center">
@@ -70,7 +70,7 @@ const Download = () => {
             <span className="text-[15px] font-QuickSand font-light leading-0 text-center">
               clients rate on
               <br />
-              tutorlancer
+              Top Grades Experts
             </span>
           </div>
         </div>

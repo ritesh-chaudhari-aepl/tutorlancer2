@@ -19,11 +19,11 @@ const Footer = () => {
                   <br /> students across the globe who seeks academic help.
                 </p>
                 <p className="flex flex-col gap-1 font-Nunito">
-                  <span>
+                  {/* <span>
                     <strong>Email</strong>: support@assignmentguru.com
-                  </span>
+                  </span> */}
                   <span>
-                    <strong>Phone</strong>: +91 6289409441
+                    <strong>Phone</strong>: +91 8987909463
                   </span>
                 </p>
               </div>
@@ -44,25 +44,21 @@ const Footer = () => {
               </p>
               <ul className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
                 <li className="cursor-pointer">
-                  <a to="#" className="font-Inter text-sm sm:text-base">
-                    Terms of Services
+                  <a href="/termsandcondition" className="font-Inter text-sm sm:text-base">
+                    Terms & Conditions
                   </a>
                 </li>{" "}
                 <span className="h-[1px] w-10 lg:h-10 lg:w-[2px] bg-white mx-5 lg:mx-0" />
                 <li className="cursor-pointer">
-                  <a to="#" className="font-Inter text-lg lg:text-base">
+                  <a href="/privacy" className="font-Inter text-lg lg:text-base">
                     Privacy Policy
                   </a>
                 </li>{" "}
+               
+                
                 <span className="h-[1px] w-10 lg:h-10 lg:w-[2px] bg-white mx-5 lg:mx-0" />
                 <li className="cursor-pointer">
-                  <a to="#" className="font-Inter text-lg lg:text-base">
-                    Support Center
-                  </a>
-                </li>{" "}
-                <span className="h-[1px] w-10 lg:h-10 lg:w-[2px] bg-white mx-5 lg:mx-0" />
-                <li className="cursor-pointer">
-                  <a to="#" className="font-Inter text-lg lg:text-base">
+                  <a href="/refund" className="font-Inter text-lg lg:text-base">
                     Refunds
                   </a>
                 </li>
